@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\GameControllerMaster.cs" />
      <Compile Include="Assets\Scripts\Spinning.cs" />
+     <Compile Include="Assets\Scripts\Tags.cs" />
      <Compile Include="Assets\Scripts\exitButton.cs" />
      <Compile Include="Assets\Scripts\playButton.cs" />
      <Compile Include="Assets\Scripts\spinButton.cs" />

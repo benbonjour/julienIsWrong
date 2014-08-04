@@ -12,6 +12,7 @@ using System.Collections;
 public class GameControllerMaster : MonoBehaviour 
 {
 	public playButton button;
+	public GUIText titleText;
 
 	/*
 	 * Start()
@@ -21,7 +22,7 @@ public class GameControllerMaster : MonoBehaviour
 	void Start () 
 	{
 		button = (playButton) GameObject.FindGameObjectWithTag("buttonStart").GetComponent(typeof(playButton));
-
+		titleText = (GUIText)GameObject.FindGameObjectWithTag ("titleGUI").GetComponent(typeof(GUIText));
 	}
 	
 	/*

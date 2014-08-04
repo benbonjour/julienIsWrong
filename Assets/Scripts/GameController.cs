@@ -21,8 +21,8 @@ public class GameController : MonoBehaviour {
 	 */
 	void Start () 
 	{
-		spinButtton_ = (spinButton)GameObject.FindGameObjectWithTag("spinButton").GetComponent(typeof(spinButton));
-		exitButton_ = (exitButton)GameObject.FindGameObjectWithTag("exitButton").GetComponent(typeof(exitButton));
+		spinButtton_ = (spinButton)GameObject.FindGameObjectWithTag(Tags.spinButton).GetComponent(typeof(spinButton));
+		exitButton_ = (exitButton)GameObject.FindGameObjectWithTag(Tags.exitButton).GetComponent(typeof(exitButton));
 	}
 	
 	/*
