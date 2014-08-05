@@ -10,6 +10,9 @@ using System.Collections;
  */
 public class Tags : MonoBehaviour {
 
+	public const string mainController = "GameController";
+	public const string menuController = "master";
+
 	public const string buttonStart = "buttonStart";
 	public const string spinButton = "spinButton";
 	public const string exitButton = "exitButton";

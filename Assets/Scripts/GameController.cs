@@ -14,6 +14,8 @@ public class GameController : MonoBehaviour {
 	private spinButton spinButtton_;
 	private exitButton exitButton_;
 
+	private GameControllerMaster master_;
+
 	/*
 	 * Start()
 	 * 
@@ -23,6 +25,8 @@ public class GameController : MonoBehaviour {
 	{
 		spinButtton_ = (spinButton)GameObject.FindGameObjectWithTag(Tags.spinButton).GetComponent(typeof(spinButton));
 		exitButton_ = (exitButton)GameObject.FindGameObjectWithTag(Tags.exitButton).GetComponent(typeof(exitButton));
+	
+		master_ = (GameControllerMaster)GameObject.FindGameObjectWithTag (Tags.menuController).GetComponent (typeof(GameControllerMaster));
 	}
 	
 	/*
