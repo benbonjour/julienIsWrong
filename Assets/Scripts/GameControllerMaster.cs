@@ -14,7 +14,8 @@ public class GameControllerMaster : MonoBehaviour
 	public playButton button;
 	public int fontSize = 36;
 
-	private string nameField = "Enter a name";
+	public const string defaultNameFiel = "Enter a name";
+	private string nameField;
 
 	private GUIStyle biggerFontSize;
 
@@ -26,6 +27,7 @@ public class GameControllerMaster : MonoBehaviour
 	void Start () 
 	{	
 		button = (playButton) GameObject.FindGameObjectWithTag("buttonStart").GetComponent(typeof(playButton));
+		nameField = defaultNameFiel;
 	}
 	
 	/*
@@ -92,4 +94,13 @@ public class GameControllerMaster : MonoBehaviour
 		return nameField;
 	}
 
+	/*
+	 * isNameSet()
+	 * 
+	 * Checks if a name has been entered.
+	 */
+	public bool isNameSet()
+	{
+		return nameField != defaultNameFiel;
+	}
 }
